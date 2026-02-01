@@ -1,5 +1,5 @@
 //      Set Mismatch.
-//      Input: nums = [3,,4]
+//      Input: nums = [1,2,2,4]
 //      Output: [2,3]
 
 #include<stdio.h>
@@ -36,7 +36,6 @@ int* findErrorNums(int* nums, int numsSize, int* returnSize)
     int *result = (int*)malloc(2 * sizeof(int));
     int *freq = (int*)calloc(numsSize + 1,sizeof(int));
  
-
     for(int i = 0; i < numsSize; i++)
     {
         freq[nums[i]]++;

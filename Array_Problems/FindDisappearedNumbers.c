@@ -10,7 +10,7 @@ int* findDisappearedNumbers(int* nums, int numsSize, int* returnSize)
 {
     int *result = (int*)malloc(numsSize * sizeof(int));
     int *final = (int*)malloc(numsSize * sizeof(int));
- 
+
     for(int i = 0; i < numsSize; i++)
     {
         result[i] = i + 1;
@@ -47,13 +47,11 @@ int* findDisappearedNumbers(int* nums, int numsSize, int* returnSize)
 int* findDisappearedNumbers(int* nums, int numsSize, int* returnSize)
 {
     int *freq = (int*)calloc(numsSize + 1, sizeof(int));
-
     
     for(int i = 0; i < numsSize; i++)
     {
         freq[nums[i]] = 1;
     }
-
     
     int *final = (int*)malloc(numsSize * sizeof(int));
     int count = 0;
